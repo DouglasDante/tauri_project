@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/main.ts" defer></script>
+    <style>
+      .logo.vite:hover {
+        filter: drop-shadow(0 0 2em #747bff);
+      }
+
+      .logo.typescript:hover {
+        filter: drop-shadow(0 0 2em #2d79c7);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>타우리에 오신 걸 환영합니다!</h1>
+
+      <div class="row">
+        <a href="https://vitejs.dev" target="_blank">
+          <img src="/src/assets/vite.svg" class="logo vite" alt="Vite logo" />
+        </a>
+        <a href="https://tauri.app" target="_blank">
+          <img
+            src="/src/assets/tauri.svg"
+            class="logo tauri"
+            alt="Tauri logo"
+          />
+        </a>
+        <a href="https://www.typescriptlang.org/docs" target="_blank">
+          <img
+            src="/src/assets/typescript.svg"
+            class="logo typescript"
+            alt="typescript logo"
+          />
+        </a>
+      </div>
+
+      <p>프레임워크에 대해 더 많은 정보를 얻으시려면 타우리 로고를 클릭하세요</p>
+      <p>반응형 개발 수정 테스트</p>
+
+      <div class="row">
+        <div>
+          <input id="greet-input" placeholder="이름을 입력하세요..." />
+          <button id="greet-button" type="button">입력</button>
+        </div>
+      </div>
+
+      <p id="greet-msg"></p>
+    </div>
+  </body>
+</html>
