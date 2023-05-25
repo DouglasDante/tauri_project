@@ -11,5 +11,5 @@ fn main() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![greet])
         .run(tauri::generate_context!())
-        .expect("error while running tauri application");
+        .expect("타우리 애플리케이션을 작업하는 동안 에러가 발생하였습니다.");
 }
